@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Declaração de nada consta</title>
+</head>
+<body>
+    <!--/*@thymesVar id="dado" type="br.com.vitormarcal.thymelafpdfexample.DadoDeclaracao"*/-->
+    <h1>Declaração de nada consta</h1>
+
+    <p>Declaro para os devidos fins que <strong th:text="${dado.nome}"></strong>
+        cujo CPF número <strong th:text="${dado.cpf}"></strong>
+        não possui débitos junto a este orgão, atá a presente data.
+    </p>
+
+    <p>Data: <strong th:text="${dado.dataDeclaracao}"></strong></p>
+</body>
+</html>
